@@ -44,32 +44,9 @@ struct LoginView: View {
                     VStack {
                         HeaderView(text: "Login")
                         
-                        VStack(alignment: .leading, spacing: 8, content: {
-                            Text("Email")
-                                .fontWeight(.bold)
-                                .foregroundColor(bgColor)
-                            TextField("email",text: $viewModel.email)
-                                .font(.system(size:20,weight:.bold))
-                                .foregroundColor(bgColor)
-                                .padding(.top, 5)
-                                .disableAutocorrection(true)
-                            
-                            Divider()
-                        })
-                        .padding(.top,25)
+                        TextFieldView(text: "Email", binding: $viewModel.email)
                         
-                        VStack(alignment: .leading, spacing: 8, content: {
-                            Text("Password")
-                                .fontWeight(.bold)
-                                .foregroundColor(bgColor)
-                            SecureField("password",text: $viewModel.password)
-                                .font(.system(size:20,weight:.bold))
-                                .foregroundColor(bgColor)
-                                .padding(.top, 5)
-                            
-                            Divider()
-                        })
-                        .padding(.top,25)
+                        TextFieldView(text: "Password", binding: $viewModel.password)
                         
                         Button(action: {
                             viewModel.forgotPassword()
@@ -93,15 +70,38 @@ struct LoginView: View {
                                 .shadow(color: secondaryColor.opacity(8), radius: 5, x: 0, y: 0)
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        if !viewModel.errorMessage.isEmpty {
+                            Text(viewModel.errorMessage)
+                            .foregroundColor(.red)
+                            .frame(maxHeight: .infinity, alignment: .top)
+                        }
+                        
+                        NavigationLink(destination: {
+                            RegisterWithPhoneView()
+                        }) {
+                            HStack {
+                                Image(systemName: "phone")
+                                    .font(.title)
+                                    .frame(width: 20,height: 20, alignment: .trailing)
+                                    
+                                Text("Login Using Phone Number")
+                                    .font(.system(size: 20, weight: .bold))
+                                    
+                            }
+                            .frame(minWidth: 0, maxWidth: getReact().width-50)
+                            .padding(15)
+                            .foregroundColor(secondaryColor)
+                            .background(bgColor)
+                            .cornerRadius(20)
+                            .padding(.top,20)
+                            .shadow(color: secondaryColor.opacity(8), radius: 6, x: 0, y: 0)
+                        }
                     }
                     .padding()
                     .padding(.top,-maxCircleHeight/1.5)
                     .frame(maxHeight: .infinity, alignment: .top)
-                    if !viewModel.errorMessage.isEmpty {
-                        Text(viewModel.errorMessage)
-                        .foregroundColor(.red)
-                        .frame(maxHeight: .infinity, alignment: .top)
-                    }
+                    
                 }
                 .overlay(
                     VStack {

@@ -12,7 +12,6 @@ import Foundation
 class RegisterViewModel: ObservableObject {
     @Published var name: String = ""
     @Published var email: String = ""
-    @Published var phone: String = ""
     @Published var password: String = ""
     @Published var confirmPassword: String = ""
     @Published var errorMessage: String = ""
@@ -36,10 +35,9 @@ class RegisterViewModel: ObservableObject {
         let newUser = User(id: id,
                            name: name,
                            email: email,
-                           phone: phone,
-                           school: "UNKNOWN",
-                           //fix location later
-                           location: "IN PROGRESS",
+                           phone: "",
+                           school: "",
+                           location: "",
                            avatar: "https://picsum.photos/100")
         let db = Firestore.firestore()
         db.collection("users")

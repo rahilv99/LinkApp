@@ -31,7 +31,6 @@ struct HeaderView: View {
             .foregroundColor(color)
             .font(.title)
             .fontWeight(.bold)
-            .kerning(1.9)
             .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
