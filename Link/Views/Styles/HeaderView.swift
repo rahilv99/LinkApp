@@ -9,16 +9,16 @@ import SwiftUI
 
 var secondaryColor: Color =
                     Color(.init(
-                      red: 100 / 255,
-                      green: 174 / 255,
+                      red: 163 / 255,
+                      green: 234 / 255,
                       blue: 255 / 255,
                       alpha: 1))
 
 var bgColor: Color =
           Color(.init(
-                  red: 40 / 255,
-                  green: 40 / 255,
-                  blue: 55 / 255,
+                  red: 0 / 255,
+                  green: 53 / 255,
+                  blue: 69 / 255,
                   alpha: 1))
 
 

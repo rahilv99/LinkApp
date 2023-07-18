@@ -41,11 +41,14 @@ struct LoginView: View {
                         )
                     }
                     .frame(maxHeight:getReact().width)
+                    
+                    
                     VStack {
                         HeaderView(text: "Login")
                         
                         TextFieldView(text: "Email", binding: $viewModel.email)
                         
+                        //change to hidden text field
                         TextFieldView(text: "Password", binding: $viewModel.password)
                         
                         Button(action: {

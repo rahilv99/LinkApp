@@ -9,7 +9,7 @@ import Foundation
 import FirebaseAuth
 import FirebaseFirestore
 
-class ProfileViewModel: ObservableObject {
+class EditProfileViewModel: ObservableObject {
     
     @Published var user: User? = nil
     
@@ -20,18 +20,6 @@ class ProfileViewModel: ObservableObject {
 
     init() {}
     
-    func updateName() {
-        
-    }
-    func updateEmail() {
-        
-    }
-    func updatePhone() {
-        
-    }
-    func updateSchool() {
-        
-    }
     func newValues() {
         
     }

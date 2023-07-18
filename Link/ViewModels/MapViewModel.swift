@@ -19,7 +19,7 @@ class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         if CLLocationManager.locationServicesEnabled() {
             locationManager = CLLocationManager()
             locationManager!.delegate = self
-            locationManager?.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager?.desiredAccuracy = kCLLocationAccuracyBest
         } else {
             print("show alert location is off for this app")
         }

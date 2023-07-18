@@ -15,7 +15,6 @@ struct MapView: View {
     @State private var isSideBarOpened = false
     
     var body: some View {
-        ZStack {
             NavigationView {
                 Map(coordinateRegion: $viewModel.reigon, showsUserLocation: true)
                     .ignoresSafeArea()
@@ -24,8 +23,6 @@ struct MapView: View {
                         viewModel.locationAvailable()
                     }
             }
-            SideMenu(isSidebarVisible: $isSideBarOpened)
-        }
     }
 }
 

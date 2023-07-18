@@ -13,12 +13,34 @@ struct MainView: View {
     
     var body: some View {
         NavigationView {
-            if viewModel.isSignedIn, !viewModel.currentUserID.isEmpty {
+            //if viewModel.isSignedIn, !viewModel.currentUserID.isEmpty {
                 //signed in
-                MapView()
-            } else {
-                LoginView()
-            }
+                TabView {
+                    HomeView()
+                        .tabItem {
+                            Image(systemName: "house")
+                        }
+                    
+                    ExploreFriendsView()
+                        .tabItem {
+                            Image(systemName: "magnifyingglass")
+                        }
+                    FriendsListView()
+                        .tabItem {
+                            Image(systemName: "person.2")
+                        }
+                    MessagesView()
+                        .tabItem {
+                            Image(systemName: "message.fill")
+                        }
+                    CurrentUserProfileView()
+                        .tabItem {
+                            Image(systemName: "person.circle")
+                        }
+                }
+           // } else {
+           //     LoginView()
+           // }
         }
     }
 }

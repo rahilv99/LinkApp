@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct CirclesView: View {
+    
+    let group: Group
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(group.name)
     }
 }
 
 struct CirclesView_Previews: PreviewProvider {
     static var previews: some View {
-        CirclesView()
+        CirclesView(group: Group.MOCK_GROUPS[0])
     }
 }

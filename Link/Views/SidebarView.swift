@@ -85,23 +85,7 @@ struct SideMenu: View {
         VStack(alignment: .leading) {
             HStack {
                 if let user = viewModel.user {
-                    AsyncImage(
-                        url: URL(
-                            string: user.avatar)) { image in
-                                image
-                                    .resizable()
-                                    .frame(width: 50,
-                                           height: 50,
-                                           alignment: .center)
-                                    .clipShape(Circle())
-                                    .overlay {
-                                        Circle().stroke(.blue, lineWidth: 2)
-                                    }
-                            } placeholder: {
-                                ProgressView()
-                            }
-                            .aspectRatio(3 / 2, contentMode: .fill)
-                            .shadow(radius: 4)
+                    ImageView(frame: 50)
                             .padding(.trailing, 18)
                     
                     VStack(alignment: .leading, spacing: 6) {
@@ -154,14 +138,14 @@ struct MenuItem: Identifiable {
 }
 
 var userActions: [MenuItem] = [
-    MenuItem(id: 4001, icon: "person.circle.fill", text: "My Account", destination: AnyView(ProfileView())),
-    MenuItem(id: 4002, icon: "map.fill", text: "My Circles", destination: AnyView(CirclesView())),
+    MenuItem(id: 4001, icon: "person.circle.fill", text: "My Profile", destination: AnyView(CurrentUserProfileView())),
+    MenuItem(id: 4002, icon: "pencil", text: "Edit Account", destination: AnyView(EditProfileView())),
     MenuItem(id: 4003, icon: "person.2.fill", text: "Friends", destination: AnyView(FriendsListView())),
     MenuItem(id: 4004, icon: "message.fill", text: "Messages", destination: AnyView(FriendsListView()))
 ]
 
 var profileActions: [MenuItem] = [
-    MenuItem(id: 4005, icon: "wrench.and.screwdriver.fill", text: "Settings", destination: AnyView(SettingsView()))
+    MenuItem(id: 4005, icon: "wrench.and.screwdriver.fill", text: "Preferneces", destination: AnyView(SettingsView()))
 ]
 
 struct MenuLinks: View {

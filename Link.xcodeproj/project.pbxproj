@@ -20,18 +20,15 @@
 		FA2BDB162A4B29B700878BD6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB152A4B29B700878BD6 /* LoginView.swift */; };
 		FA2BDB182A4B29C400878BD6 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB172A4B29C400878BD6 /* RegisterView.swift */; };
 		FA2BDB1A2A4B29CE00878BD6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB192A4B29CE00878BD6 /* MapView.swift */; };
-		FA2BDB1C2A4B29E100878BD6 /* FriendsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB1B2A4B29E100878BD6 /* FriendsListView.swift */; };
-		FA2BDB1E2A4B2A0D00878BD6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB1D2A4B2A0D00878BD6 /* ProfileView.swift */; };
+		FA2BDB1E2A4B2A0D00878BD6 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB1D2A4B2A0D00878BD6 /* EditProfileView.swift */; };
 		FA2BDB202A4B2A1A00878BD6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB1F2A4B2A1A00878BD6 /* SettingsView.swift */; };
 		FA2BDB222A4B2A6000878BD6 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB212A4B2A6000878BD6 /* MainViewModel.swift */; };
 		FA2BDB242A4B2A6800878BD6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB232A4B2A6800878BD6 /* LoginViewModel.swift */; };
 		FA2BDB262A4B2A7200878BD6 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB252A4B2A7200878BD6 /* RegisterViewModel.swift */; };
 		FA2BDB282A4B2A7B00878BD6 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB272A4B2A7B00878BD6 /* MapViewModel.swift */; };
-		FA2BDB2A2A4B2A8600878BD6 /* FriendsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB292A4B2A8600878BD6 /* FriendsListViewModel.swift */; };
-		FA2BDB2C2A4B2A9100878BD6 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB2B2A4B2A9100878BD6 /* ProfileViewModel.swift */; };
+		FA2BDB2C2A4B2A9100878BD6 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB2B2A4B2A9100878BD6 /* EditProfileViewModel.swift */; };
 		FA2BDB2E2A4B2A9800878BD6 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB2D2A4B2A9800878BD6 /* SettingsViewModel.swift */; };
 		FA2BDB302A4B2B2E00878BD6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB2F2A4B2B2E00878BD6 /* User.swift */; };
-		FA2BDB322A4B2B6500878BD6 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2BDB312A4B2B6500878BD6 /* Group.swift */; };
 		FA32815B2A4D32260052C730 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32815A2A4D32260052C730 /* SidebarView.swift */; };
 		FA32815D2A4DD9B40052C730 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32815C2A4DD9B40052C730 /* TextView.swift */; };
 		FA3281602A4DDE730052C730 /* CirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA32815F2A4DDE730052C730 /* CirclesView.swift */; };
@@ -41,6 +38,22 @@
 		FA80F5C92A4C948E001D53C1 /* SidebarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80F5C82A4C948E001D53C1 /* SidebarViewModel.swift */; };
 		FA9AB4422A5892F500D61269 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB4412A5892F500D61269 /* TextFieldView.swift */; };
 		FA9AB4452A589FB700D61269 /* RegisterWithPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB4442A589FB700D61269 /* RegisterWithPhoneView.swift */; };
+		FA9AB4472A59E09200D61269 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB4462A59E09200D61269 /* HomeView.swift */; };
+		FA9AB4492A5B416500D61269 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB4482A5B416500D61269 /* ImageView.swift */; };
+		FA9AB44B2A5DC83000D61269 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB44A2A5DC83000D61269 /* HomeViewModel.swift */; };
+		FA9AB44D2A5DF0C900D61269 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB44C2A5DF0C900D61269 /* Group.swift */; };
+		FA9AB44F2A5DF71300D61269 /* CreateCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB44E2A5DF71300D61269 /* CreateCircleView.swift */; };
+		FA9AB4512A5EEC9700D61269 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB4502A5EEC9700D61269 /* ContactView.swift */; };
+		FA9AB4532A5EECA200D61269 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB4522A5EECA200D61269 /* ContactViewModel.swift */; };
+		FA9AB4552A5EECE800D61269 /* FriendsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB4542A5EECE800D61269 /* FriendsListViewModel.swift */; };
+		FA9AB4572A5EECF400D61269 /* FriendsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB4562A5EECF400D61269 /* FriendsListView.swift */; };
+		FA9AB4592A5EFB8C00D61269 /* CreateCircleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB4582A5EFB8C00D61269 /* CreateCircleViewModel.swift */; };
+		FA9AB45C2A64543300D61269 /* ExploreFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB45B2A64543300D61269 /* ExploreFriendsView.swift */; };
+		FA9AB45E2A64544400D61269 /* ExploreFriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB45D2A64544400D61269 /* ExploreFriendsViewModel.swift */; };
+		FA9AB4602A65984700D61269 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB45F2A65984700D61269 /* MessagesView.swift */; };
+		FA9AB4622A65985100D61269 /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AB4612A65985100D61269 /* MessagesViewModel.swift */; };
+		FAA81C162A65BD080016CDE1 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA81C152A65BD080016CDE1 /* CurrentUserProfileView.swift */; };
+		FAA81C182A65BD1E0016CDE1 /* CurrentUserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA81C172A65BD1E0016CDE1 /* CurrentUserProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,18 +87,15 @@
 		FA2BDB152A4B29B700878BD6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FA2BDB172A4B29C400878BD6 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		FA2BDB192A4B29CE00878BD6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		FA2BDB1B2A4B29E100878BD6 /* FriendsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListView.swift; sourceTree = "<group>"; };
-		FA2BDB1D2A4B2A0D00878BD6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FA2BDB1D2A4B2A0D00878BD6 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		FA2BDB1F2A4B2A1A00878BD6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FA2BDB212A4B2A6000878BD6 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FA2BDB232A4B2A6800878BD6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		FA2BDB252A4B2A7200878BD6 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		FA2BDB272A4B2A7B00878BD6 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
-		FA2BDB292A4B2A8600878BD6 /* FriendsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewModel.swift; sourceTree = "<group>"; };
-		FA2BDB2B2A4B2A9100878BD6 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		FA2BDB2B2A4B2A9100878BD6 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		FA2BDB2D2A4B2A9800878BD6 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		FA2BDB2F2A4B2B2E00878BD6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		FA2BDB312A4B2B6500878BD6 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		FA32815A2A4D32260052C730 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		FA32815C2A4DD9B40052C730 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		FA32815F2A4DDE730052C730 /* CirclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclesView.swift; sourceTree = "<group>"; };
@@ -95,6 +105,23 @@
 		FA80F5C82A4C948E001D53C1 /* SidebarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewModel.swift; sourceTree = "<group>"; };
 		FA9AB4412A5892F500D61269 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		FA9AB4442A589FB700D61269 /* RegisterWithPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWithPhoneView.swift; sourceTree = "<group>"; };
+		FA9AB4462A59E09200D61269 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FA9AB4482A5B416500D61269 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		FA9AB44A2A5DC83000D61269 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FA9AB44C2A5DF0C900D61269 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		FA9AB44E2A5DF71300D61269 /* CreateCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCircleView.swift; sourceTree = "<group>"; };
+		FA9AB4502A5EEC9700D61269 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		FA9AB4522A5EECA200D61269 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		FA9AB4542A5EECE800D61269 /* FriendsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewModel.swift; sourceTree = "<group>"; };
+		FA9AB4562A5EECF400D61269 /* FriendsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListView.swift; sourceTree = "<group>"; };
+		FA9AB4582A5EFB8C00D61269 /* CreateCircleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCircleViewModel.swift; sourceTree = "<group>"; };
+		FA9AB45A2A5F099B00D61269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FA9AB45B2A64543300D61269 /* ExploreFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreFriendsView.swift; sourceTree = "<group>"; };
+		FA9AB45D2A64544400D61269 /* ExploreFriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreFriendsViewModel.swift; sourceTree = "<group>"; };
+		FA9AB45F2A65984700D61269 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		FA9AB4612A65985100D61269 /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
+		FAA81C152A65BD080016CDE1 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		FAA81C172A65BD1E0016CDE1 /* CurrentUserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +175,7 @@
 		FA2BDADC2A4B276400878BD6 /* Link */ = {
 			isa = PBXGroup;
 			children = (
+				FA9AB45A2A5F099B00D61269 /* Info.plist */,
 				FA2BDB142A4B297500878BD6 /* Other */,
 				FA2BDB132A4B296F00878BD6 /* Models */,
 				FA2BDB122A4B295C00878BD6 /* ViewModels */,
@@ -185,15 +213,19 @@
 		FA2BDB102A4B294200878BD6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAA81C192A65BEB00016CDE1 /* Profiles */,
 				FA9AB4432A589F9300D61269 /* Authentication */,
+				FA9AB4462A59E09200D61269 /* HomeView.swift */,
 				FA2BDADF2A4B276400878BD6 /* MainView.swift */,
 				FA2BDB192A4B29CE00878BD6 /* MapView.swift */,
-				FA2BDB1B2A4B29E100878BD6 /* FriendsListView.swift */,
-				FA2BDB1D2A4B2A0D00878BD6 /* ProfileView.swift */,
 				FA2BDB1F2A4B2A1A00878BD6 /* SettingsView.swift */,
 				FA32815A2A4D32260052C730 /* SidebarView.swift */,
 				FA32815F2A4DDE730052C730 /* CirclesView.swift */,
-				FA32815E2A4DD9BB0052C730 /* Text Styles */,
+				FA9AB44E2A5DF71300D61269 /* CreateCircleView.swift */,
+				FA9AB4562A5EECF400D61269 /* FriendsListView.swift */,
+				FA9AB45B2A64543300D61269 /* ExploreFriendsView.swift */,
+				FA9AB45F2A65984700D61269 /* MessagesView.swift */,
+				FA32815E2A4DD9BB0052C730 /* Styles */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,14 +233,17 @@
 		FA2BDB122A4B295C00878BD6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FAA81C1F2A65BF380016CDE1 /* Authentication */,
+				FAA81C1E2A65BF280016CDE1 /* Profiles */,
 				FA2BDB212A4B2A6000878BD6 /* MainViewModel.swift */,
-				FA2BDB232A4B2A6800878BD6 /* LoginViewModel.swift */,
-				FA2BDB252A4B2A7200878BD6 /* RegisterViewModel.swift */,
 				FA2BDB272A4B2A7B00878BD6 /* MapViewModel.swift */,
-				FA2BDB292A4B2A8600878BD6 /* FriendsListViewModel.swift */,
-				FA2BDB2B2A4B2A9100878BD6 /* ProfileViewModel.swift */,
 				FA80F5C82A4C948E001D53C1 /* SidebarViewModel.swift */,
 				FA2BDB2D2A4B2A9800878BD6 /* SettingsViewModel.swift */,
+				FA9AB44A2A5DC83000D61269 /* HomeViewModel.swift */,
+				FA9AB4542A5EECE800D61269 /* FriendsListViewModel.swift */,
+				FA9AB4582A5EFB8C00D61269 /* CreateCircleViewModel.swift */,
+				FA9AB45D2A64544400D61269 /* ExploreFriendsViewModel.swift */,
+				FA9AB4612A65985100D61269 /* MessagesViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -217,7 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				FA2BDB2F2A4B2B2E00878BD6 /* User.swift */,
-				FA2BDB312A4B2B6500878BD6 /* Group.swift */,
+				FA9AB44C2A5DF0C900D61269 /* Group.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -233,14 +268,15 @@
 			path = Other;
 			sourceTree = "<group>";
 		};
-		FA32815E2A4DD9BB0052C730 /* Text Styles */ = {
+		FA32815E2A4DD9BB0052C730 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
 				FA80F5BA2A4B3324001D53C1 /* HeaderView.swift */,
 				FA32815C2A4DD9B40052C730 /* TextView.swift */,
 				FA9AB4412A5892F500D61269 /* TextFieldView.swift */,
+				FA9AB4482A5B416500D61269 /* ImageView.swift */,
 			);
-			path = "Text Styles";
+			path = Styles;
 			sourceTree = "<group>";
 		};
 		FA9AB4432A589F9300D61269 /* Authentication */ = {
@@ -249,6 +285,35 @@
 				FA2BDB172A4B29C400878BD6 /* RegisterView.swift */,
 				FA2BDB152A4B29B700878BD6 /* LoginView.swift */,
 				FA9AB4442A589FB700D61269 /* RegisterWithPhoneView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		FAA81C192A65BEB00016CDE1 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				FA9AB4502A5EEC9700D61269 /* ContactView.swift */,
+				FAA81C152A65BD080016CDE1 /* CurrentUserProfileView.swift */,
+				FA2BDB1D2A4B2A0D00878BD6 /* EditProfileView.swift */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		FAA81C1E2A65BF280016CDE1 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				FA9AB4522A5EECA200D61269 /* ContactViewModel.swift */,
+				FAA81C172A65BD1E0016CDE1 /* CurrentUserProfileViewModel.swift */,
+				FA2BDB2B2A4B2A9100878BD6 /* EditProfileViewModel.swift */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		FAA81C1F2A65BF380016CDE1 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				FA2BDB252A4B2A7200878BD6 /* RegisterViewModel.swift */,
+				FA2BDB232A4B2A6800878BD6 /* LoginViewModel.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -395,27 +460,40 @@
 				FA2BDB162A4B29B700878BD6 /* LoginView.swift in Sources */,
 				FA32815D2A4DD9B40052C730 /* TextView.swift in Sources */,
 				FA9AB4422A5892F500D61269 /* TextFieldView.swift in Sources */,
+				FAA81C182A65BD1E0016CDE1 /* CurrentUserProfileViewModel.swift in Sources */,
 				FA80F5B92A4B3270001D53C1 /* Extensions.swift in Sources */,
-				FA2BDB322A4B2B6500878BD6 /* Group.swift in Sources */,
+				FA9AB45C2A64543300D61269 /* ExploreFriendsView.swift in Sources */,
 				FA2BDB202A4B2A1A00878BD6 /* SettingsView.swift in Sources */,
 				FA2BDB182A4B29C400878BD6 /* RegisterView.swift in Sources */,
-				FA2BDB1C2A4B29E100878BD6 /* FriendsListView.swift in Sources */,
 				FA32815B2A4D32260052C730 /* SidebarView.swift in Sources */,
+				FA9AB45E2A64544400D61269 /* ExploreFriendsViewModel.swift in Sources */,
 				FA80F5BB2A4B3324001D53C1 /* HeaderView.swift in Sources */,
+				FA9AB4592A5EFB8C00D61269 /* CreateCircleViewModel.swift in Sources */,
 				FA2BDB302A4B2B2E00878BD6 /* User.swift in Sources */,
 				FA2BDB262A4B2A7200878BD6 /* RegisterViewModel.swift in Sources */,
 				FA80F5C92A4C948E001D53C1 /* SidebarViewModel.swift in Sources */,
+				FA9AB4532A5EECA200D61269 /* ContactViewModel.swift in Sources */,
 				FA2BDB2E2A4B2A9800878BD6 /* SettingsViewModel.swift in Sources */,
+				FA9AB4512A5EEC9700D61269 /* ContactView.swift in Sources */,
+				FA9AB44F2A5DF71300D61269 /* CreateCircleView.swift in Sources */,
+				FA9AB4622A65985100D61269 /* MessagesViewModel.swift in Sources */,
 				FA2BDB1A2A4B29CE00878BD6 /* MapView.swift in Sources */,
-				FA2BDB1E2A4B2A0D00878BD6 /* ProfileView.swift in Sources */,
-				FA2BDB2A2A4B2A8600878BD6 /* FriendsListViewModel.swift in Sources */,
-				FA2BDB2C2A4B2A9100878BD6 /* ProfileViewModel.swift in Sources */,
+				FA9AB4572A5EECF400D61269 /* FriendsListView.swift in Sources */,
+				FA9AB4472A59E09200D61269 /* HomeView.swift in Sources */,
+				FA2BDB1E2A4B2A0D00878BD6 /* EditProfileView.swift in Sources */,
+				FA9AB44D2A5DF0C900D61269 /* Group.swift in Sources */,
+				FA2BDB2C2A4B2A9100878BD6 /* EditProfileViewModel.swift in Sources */,
 				FA2BDAE02A4B276400878BD6 /* MainView.swift in Sources */,
+				FA9AB4602A65984700D61269 /* MessagesView.swift in Sources */,
 				FA9AB4452A589FB700D61269 /* RegisterWithPhoneView.swift in Sources */,
 				FA2BDADE2A4B276400878BD6 /* LinkApp.swift in Sources */,
 				FA3281602A4DDE730052C730 /* CirclesView.swift in Sources */,
+				FA9AB44B2A5DC83000D61269 /* HomeViewModel.swift in Sources */,
 				FA2BDB242A4B2A6800878BD6 /* LoginViewModel.swift in Sources */,
+				FA9AB4492A5B416500D61269 /* ImageView.swift in Sources */,
+				FAA81C162A65BD080016CDE1 /* CurrentUserProfileView.swift in Sources */,
 				FA2BDB222A4B2A6000878BD6 /* MainViewModel.swift in Sources */,
+				FA9AB4552A5EECE800D61269 /* FriendsListViewModel.swift in Sources */,
 				FA2BDB282A4B2A7B00878BD6 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,8 +655,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Link/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Link/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Link;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app suggest sharing your location with your friends";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app is sharing your location with your friends";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -607,8 +687,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Link/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Link/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Link;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app suggest sharing your location with your friends";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app is sharing your location with your friends";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
