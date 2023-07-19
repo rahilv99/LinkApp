@@ -138,7 +138,7 @@ struct MenuItem: Identifiable {
 }
 
 var userActions: [MenuItem] = [
-    MenuItem(id: 4001, icon: "person.circle.fill", text: "My Profile", destination: AnyView(CurrentUserProfileView())),
+    MenuItem(id: 4001, icon: "person.circle.fill", text: "My Profile", destination: AnyView(CurrentUserProfileView(user: User.MOCK_USERS[0]))),
     MenuItem(id: 4002, icon: "pencil", text: "Edit Account", destination: AnyView(EditProfileView())),
     MenuItem(id: 4003, icon: "person.2.fill", text: "Friends", destination: AnyView(FriendsListView())),
     MenuItem(id: 4004, icon: "message.fill", text: "Messages", destination: AnyView(FriendsListView()))

@@ -48,7 +48,8 @@ struct EditProfileView: View {
                         
                         Spacer()
                         
-                        if let user = viewModel.user {
+                        //if let user = viewModel.user {
+                        let user = User.MOCK_USERS[0]
 
                         EditField(field: "Name", placeholder: user.name, binding: $viewModel.newName)
                         EditField(field: "Email", placeholder: user.email, binding: $viewModel.newEmail)
@@ -59,9 +60,10 @@ struct EditProfileView: View {
                                 .buttonStyle(Button1())
                                 .padding(.top,10)
                                 .padding(.bottom, 50)
-                        } else {
-                            ProgressView()
-                        }
+                        Spacer()
+                        //} else {
+                        //    ProgressView()
+                        //}
                     }
                         .padding()
                         .padding(.top,-maxCircleHeight/1.5)

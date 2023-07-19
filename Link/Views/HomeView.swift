@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State private var displayContact = false
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -37,7 +40,7 @@ struct HomeView: View {
                     }
                 }
                 .navigationDestination(for: Group.self, destination: {
-                    group in CirclesView(group: group)
+                    group in CircleView(group: group)
                 })
                 .padding(10)
                 
@@ -52,7 +55,7 @@ struct HomeView: View {
                     }
                 }
                 .navigationDestination(for: User.self, destination: {
-                    user in ContactView(user: user)
+                    user in ContactView(user: user, displayContact: $displayContact)
                 })
                 .padding(10)
             }
@@ -64,13 +67,12 @@ struct HomeView: View {
 struct FriendImageView: View {
     
     var user: User
-    var url: String = "https://picsum.photos/100"
     var frame: CGFloat = 25
     
     var body: some View {
         AsyncImage(
             url: URL(
-                string: url)) { image in
+                string: user.avatar ?? "")) { image in
                     image
                         .resizable()
                         .frame(width: frame,

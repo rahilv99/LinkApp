@@ -33,7 +33,7 @@ struct MainView: View {
                         .tabItem {
                             Image(systemName: "message.fill")
                         }
-                    CurrentUserProfileView()
+                    CurrentUserProfileView(user: User.MOCK_USERS[0])
                         .tabItem {
                             Image(systemName: "person.circle")
                         }

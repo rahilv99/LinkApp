@@ -9,9 +9,8 @@ import SwiftUI
 
 struct ExploreFriendsView: View {
     
-    var names = ["Evan", "Robert","James","Stephanie"]
-    
     @State private var searchText:String = ""
+    @State private var displayContact = false
     
     var body: some View {
         NavigationStack {
@@ -25,7 +24,7 @@ struct ExploreFriendsView: View {
                     }
                 }
                 .navigationDestination(for: User.self, destination: {
-                    user in ContactView(user: user)
+                    user in ContactView(user: user, displayContact: $displayContact)
                 })
             }
         }
@@ -33,7 +32,7 @@ struct ExploreFriendsView: View {
         
         //add invite from contacts card
     }
-    
+    /*
     var searchResults: [String] {
             if searchText.isEmpty {
                 return names
@@ -41,6 +40,7 @@ struct ExploreFriendsView: View {
                 return names.filter { $0.contains(searchText) }
             }
         }
+     */
 }
 
 struct UserPreview: View {
