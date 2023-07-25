@@ -81,17 +81,17 @@ struct LoginView: View {
                         }
                         
                         NavigationLink(destination: {
-                            RegisterWithPhoneView()
+                            LoginWithPhoneView()
                         }) {
                             HStack {
                                 Image(systemName: "phone")
                                     .font(.title)
                                     .frame(width: 20,height: 20, alignment: .trailing)
+                                
+                                    Text("Login Using Phone Number")
+                                        .font(.system(size: 20, weight: .bold))
                                     
-                                Text("Login Using Phone Number")
-                                    .font(.system(size: 20, weight: .bold))
-                                    
-                            }
+                                }
                             .frame(minWidth: 0, maxWidth: getReact().width-50)
                             .padding(15)
                             .foregroundColor(secondaryColor)
