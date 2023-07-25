@@ -54,6 +54,7 @@ struct HomeView: View {
                         }
                     }
                 }
+                //this will need to be changed to something different since contactView is a pop-up
                 .navigationDestination(for: User.self, destination: {
                     user in ContactView(user: user, displayContact: $displayContact)
                 })

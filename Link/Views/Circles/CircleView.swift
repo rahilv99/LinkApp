@@ -13,18 +13,38 @@ struct CircleView: View {
     let group: Group
     @StateObject var viewModel = MapViewModel()
     
+    //iterate over users of group, display location data of each user
+    //iterate over any current hotspots of map, display location data of each event
+    //create event button
+    //circle information button, display members, leave group, location permissions of current user (toggle),
     var body: some View {
             NavigationView {
-                VStack {
-                    Map(coordinateRegion: $viewModel.reigon, showsUserLocation: true)
-                        .ignoresSafeArea()
-                        .accentColor(Color.red)
-                        .onAppear {
-                            viewModel.locationAvailable()
+                    VStack {
+                        HStack {
+                            Text(group.name)
+                                .font(.title2)
+                                .bold()
+                                .padding()
+                            
+                            Spacer()
+                            
+                            Button(action: {
+                                
+                            }) {
+                                Image(systemName: "person.3.sequence")
+                                    
+                                    .padding()
+                            }
                         }
-                }
-                .navigationTitle(group.name)
-                .navigationBarTitleDisplayMode(.inline)
+                        Map(coordinateRegion: $viewModel.reigon, showsUserLocation: true)
+                            .ignoresSafeArea()
+                            .accentColor(Color.red)
+                            .onAppear {
+                                viewModel.locationAvailable()
+                            }
+                    }
+                //.navigationTitle(group.name)
+                //.navigationBarTitleDisplayMode(.inline)
             }
     }
 }
